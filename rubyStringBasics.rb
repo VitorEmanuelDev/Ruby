@@ -1,6 +1,6 @@
 =begin
 
-practice
+practice strings
 
 =end
 
