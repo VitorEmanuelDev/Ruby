@@ -4,7 +4,7 @@ Math operators practice
 
 =end
 
-puts "    Simple calculator"
+puts "Simple calculator"
 25.times {print "-"}
 
 puts "\nEnter the first number"
@@ -14,6 +14,7 @@ puts "\nEnter the second number"
 num_2 = gets.chomp
 
 puts "\nResults"
+25.times {print "-"}
 
 puts "\nMultiplication: #{num_1.to_f * num_2.to_f}"
 
@@ -22,3 +23,5 @@ puts "\nDivision: #{(num_1.to_f / num_2.to_f).round(3)}"
 puts "\nAddition: #{num_1.to_f + num_2.to_f}"
 
 puts "\nSubtraction: #{num_1.to_f - num_2.to_f}"
+
+puts "\nModulus: #{num_1.to_i % num_2.to_i}"
