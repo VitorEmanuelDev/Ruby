@@ -1,6 +1,6 @@
 =begin
 
-Math operators practice
+Math operators/control flow practice
 
 =end
 
@@ -46,12 +46,38 @@ def mod(num_1, num_2)
     
 end
 
-puts "\nMultiplication: #{multiply(num_1, num_2)}"
+puts "\nPick an operation:"
+puts "- 1 = Multiplication"
+puts "- 2 = Division"
+puts "- 3 = Addition"
+puts "- 4 = Subtraction"
+puts "- 5 = Modulus"
 
-puts "\nDivision: #{(divide(num_1, num_2)).round(3)}"
+operation = gets.chomp
 
-puts "\nAddition: #{add(num_1, num_2)}"
+if operation == '1'
 
-puts "\nSubtraction: #{subtract(num_1, num_2)}"
+puts "Multiplication: #{multiply(num_1, num_2)}"
 
-puts "\nModulus: #{mod(num_1, num_2)}"
+elsif operation == '2'
+    
+puts "Division: #{(divide(num_1, num_2)).round(3)}"
+
+elsif operation == '3'
+    
+puts "Addition: #{add(num_1, num_2)}"
+
+elsif operation == '4'
+
+puts "Subtraction: #{subtract(num_1, num_2)}"
+
+elsif operation == '5'
+
+puts "Modulus: #{mod(num_1, num_2)}"
+
+else
+
+puts "Invalid operation."    
+    
+end
+
