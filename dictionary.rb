@@ -5,6 +5,7 @@ Area code dictionary
 =end
 
 dial_book = {
+    
   "salvador" => "71",
   "rio de janeiro" => "21",
   "fortaleza" => "88",
@@ -15,16 +16,21 @@ dial_book = {
   "belo horizonte" => "31",
   "curitiba" => "41",
   "santa catarina" => "48"
+  
 }
  
 # Get city names from the hash
 def get_city_names(hash)
-hash.keys
+    
+    hash.keys
+    
 end
  
 # Get area code based on given hash and key
 def get_area_code(hash, key)
-hash[key]
+    
+    hash[key]
+    
 end
  
 # Execution flow
